@@ -14,16 +14,19 @@ translate_dict = {
 
 }
 
-message = "...././.-../.-../---//.--/---/.-./.-../-../-.-.--//"
+print("Hvad vil du gerne oversætte?")
+message = input()
+#message = "...././.-../.-../---//.--/---/.-./.-../-../-.-.--//"
 
 text = ""
 
 message_split = message.split('/')
-print(message_split)
+#print(message_split)
 
 for c in message_split:
-    print(c)
+    #print(c)
     bogstav = translate_dict[c]
-    print(bogstav)
+    #print(bogstav)
     text += bogstav + " "
-    print(text)
+
+print(text)
