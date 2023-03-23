@@ -14,7 +14,20 @@ translate_dict = {
 }
 
 message = "Hello World!"
-message = "/".join(translate_dict[c] for c in message.upper())
-message = message + "//"
+output = "/".join(translate_dict[c] for c in message.upper())
+output = output + "//"
 
-print(message)
+print(output)
+
+message_upper = message.upper() 
+
+print(message_upper)
+
+code = ""
+
+for c in message_upper: 
+    tegn = translate_dict[c]
+    code += tegn + "/"
+    
+result = code + "/"
+print(result)
