@@ -8,27 +8,25 @@ translate_dict = {
     '-.--': 'Y', '--..': 'Z', '.-.-': 'Æ', '---.': 'Ø', 
     '.--.-': 'Å', '.----': '1', '..---': '2', '...--': '3',
     '....-': '4', '.....': '5', '-....': '6', '--...': '7', 
-    '---..': '8', '----.': '9', '-----': '0', ', ': '--..--',
-    '.': '.-.-.-', '?': '..--..', '/': '-..-.', '-': '-....-', 
-    '(': '-.--.', ')': '-.--.-', '!': '-.-.--', '//': ' ',
+    '---..': '8', '----.': '9', '-----': '0', '': ' ', '--..--': ',',
+    '.-.-.-': '.', '..--..': '?', '-..-.': '/', '-....-': '-', 
+    '-.--.': '(', '-.--.-': ')', '-.-.--': '!', 
 
 }
 
-message = "...././.-../.-../---//.--/---/.-./.-../-../-.-.--//"
+print("Hvad vil du gerne oversætte?")
+message = input()
+#message = "...././.-../.-../---//.--/---/.-./.-../-../-.-.--//"
 
-morse = ""
+text = ""
 
-for c in message: 
-    if c == '.':
-        morse = morse + "."
-        print(morse)
-    if c == '-':
-        morse = morse + "-"
-        print(morse)
-    else:
-        message = translate_dict[morse]
-        morse = ""
-        print(message)
+message_split = message.split('/')
+#print(message_split)
 
+for c in message_split:
+    #print(c)
+    bogstav = translate_dict[c]
+    #print(bogstav)
+    text += bogstav + " "
 
-#message = " ".join(translate_dict[c] for c in message.upper())
+print(text)
