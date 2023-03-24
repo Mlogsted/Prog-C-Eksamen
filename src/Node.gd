@@ -15,9 +15,6 @@ var translate_dict = {
 	'-':'-....-', '(':'-.--.', ')':'-.--.-', '!': '-.-.--',
 }
 
-var message = "Hello World!"
-
-#
 #var Dict = {
 #	'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..',
 #	'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
@@ -32,15 +29,25 @@ var message = "Hello World!"
 #	', ':'--..--', '.':'.-.-.-', '?':'..--..', '/':'-..-.', 
 #	'-':'-....-', '(':'-.--.', ')':'-.--.-', '!': '-.-.--',
 #}
-#
-#var message = 
-#
-## Called when the node enters the scene tree for the first time.
+
+ 
+
+
+# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	var message = "Hello World!"
+	var message_upper = message.to_upper() 
+
+	#print(message_upper)
+
+	var code = ""
+	for c in message_upper:
+		var tegn = translate_dict[c]
+		code += tegn + "/"
+	
+	var result = code + "/"
+	print(result)
 
 
-	message = "/".join([translate_dict[c], for c in message.upper()])
-	print(message)
-
-
-
+#var textArray = text.split("", true);
+#Brug som split func i PY men bare godot.
