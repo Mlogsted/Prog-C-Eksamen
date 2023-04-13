@@ -35,7 +35,8 @@ var translate_dict = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var message = "Hello World!"
+	#var message = "Hello World!"
+	var message = "...././.-../.-../---//.--/---/.-./.-../-../-.-.--//"
 	var message_upper = message.to_upper() 
 
 	#print(message_upper)
@@ -48,6 +49,7 @@ func _ready() -> void:
 	var result = code + "/"
 	print(result)
 
+# Hello World! == ...././.-../.-../---//.--/---/.-./.-../-../-.-.--//
 
-#var textArray = text.split("", true);
+var textArray = message.split("/", true);
 #Brug som split func i PY men bare godot.
