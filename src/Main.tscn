@@ -7,11 +7,11 @@
 
 [node name="Icon" type="Sprite" parent="."]
 position = Vector2( 799, 211 )
-texture = ExtResource( 1 )
 
 [node name="script" type="Node" parent="."]
-[node name="M-T  script" type="Node" parent="."]
+
+[node name="T-M  script" type="Node" parent="."]
 script = ExtResource( 1 )
 
-[node name="T-M script (Nodegd)" type="Node" parent="."]
+[node name="M-T script (Nodegd)" type="Node" parent="."]
 script = ExtResource( 2 )

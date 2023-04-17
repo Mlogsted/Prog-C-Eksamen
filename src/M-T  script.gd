@@ -31,7 +31,7 @@ func _ready() -> void:
 		code += tegn + "/"
 	
 	var result = code + "/"
-	#print(result)
+	print(result)
 
 # Hello World! == ...././.-../.-../---//.--/---/.-./.-../-../-.-.--//
 
