@@ -1,8 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Image/Baggrund_liggende.png" type="Texture" id=1]
 [ext_resource path="res://Image/Translate_knap_trykket.png" type="Texture" id=2]
 [ext_resource path="res://Image/Translate_knap.png" type="Texture" id=3]
+[ext_resource path="res://Image/OpenSans-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=4]
+size = 55
+font_data = ExtResource( 4 )
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -22,7 +27,8 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.333333 )
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-margin_right = 4255.0
+margin_left = 1.0
+margin_right = 4256.0
 margin_bottom = 2500.0
 rect_scale = Vector2( 0.240781, 0.240713 )
 texture = ExtResource( 1 )
@@ -36,10 +42,14 @@ texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 2 )
 
 [node name="LineEdit" type="LineEdit" parent="CanvasLayer/TextureRect"]
-margin_left = 768.0
+margin_left = 781.0
 margin_top = 652.0
-margin_right = 3518.0
+margin_right = 3505.0
 margin_bottom = 1163.0
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
 custom_styles/read_only = SubResource( 1 )
 custom_styles/focus = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
