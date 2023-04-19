@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Image/Baggrund_liggende.png" type="Texture" id=1]
 [ext_resource path="res://Image/Translate_knap_trykket.png" type="Texture" id=2]
@@ -6,7 +6,7 @@
 [ext_resource path="res://Image/OpenSans-Regular.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=4]
-size = 55
+size = 70
 font_data = ExtResource( 4 )
 
 [sub_resource type="StyleBoxEmpty" id=1]
@@ -14,6 +14,10 @@ font_data = ExtResource( 4 )
 [sub_resource type="StyleBoxEmpty" id=2]
 
 [sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="DynamicFont" id=5]
+size = 70
+font_data = ExtResource( 4 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -54,3 +58,11 @@ custom_styles/read_only = SubResource( 1 )
 custom_styles/focus = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
 clear_button_enabled = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 191.0
+margin_top = 431.0
+margin_right = 843.0
+margin_bottom = 553.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
