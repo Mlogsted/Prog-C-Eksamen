@@ -29,12 +29,9 @@ func _ready() -> void:
 	var text = ""
 	for c in message_split:
 		var bogstav = oversaet_dict[c] 
-		text += bogstav
-	
-	
+		text += bogstav + " "
 
 	print(text)
-
 
 # Hello World! == ...././.-../.-../---//.--/---/.-./.-../-../-.-.--//
 
