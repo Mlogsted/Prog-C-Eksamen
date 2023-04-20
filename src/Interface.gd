@@ -3,11 +3,11 @@ extends Control
 
 onready var morse: TextEdit = $CanvasLayer/Morse
 onready var tekst: TextEdit = $CanvasLayer/Tekst
-
+# Refere til de to tekst felter
 
 func _on_MorseTekst_pressed() -> void:
 # Når knappen trykkes udføres handlingen
-	print ("kat")
+
 	tekst.text = _morse_to_text_(morse.text)
 	# Læser morse indhold, oversætter og gemmer i variabel. Ændre indhold i tekst, så det er det oversatte der står istedet for
 	
@@ -15,7 +15,7 @@ func _on_MorseTekst_pressed() -> void:
 
 func _on_TekstMorse_pressed() -> void:
 	# Når knappen trykkes udføres handlingen
-	print ("kat")
+
 	morse.text = _text_to_morse(tekst.text)
 	# Læser tekst indhold, oversætter og gemmer i variabel. Ændre indhold i morse, så det er det oversatte der står istedet for
 	
