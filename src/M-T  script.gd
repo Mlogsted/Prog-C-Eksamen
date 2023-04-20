@@ -15,9 +15,6 @@ var translate_dict = {
 	'-':'-....-', '(':'-.--.', ')':'-.--.-', '!': '-.-.--',
 }
 
- 
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var message = "Hello World!"

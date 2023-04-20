@@ -33,7 +33,3 @@ func _ready() -> void:
 
 	print(text)
 
-# Hello World! == ...././.-../.-../---//.--/---/.-./.-../-../-.-.--//
-
-
-#Brug som split func i PY men bare godot.
