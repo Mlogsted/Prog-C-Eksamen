@@ -67,7 +67,7 @@ var oversaet_dict = {
  
 
 
-# Called when the node enters the scene tree for the first time.
+
 func _morse_to_text_(message):
 	var message_split = message.split("/", true);
 	
